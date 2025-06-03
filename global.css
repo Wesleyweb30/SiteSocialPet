@@ -1,0 +1,142 @@
+/* Estilo base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Container centralizado */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Cabeçalho principal */
+.main-header {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 0;
+}
+
+/* Conteúdo do cabeçalho com logo e botão */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo como imagem */
+.logo-img {
+  height: 50px;
+  margin-left: 20px;
+}
+
+/* Botão de registrar pet */
+.register-button {
+  background-color: white;
+  color: #f44336;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-right: 20px;
+  border: 2px solid #f44336;
+}
+
+.register-button:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Título do nome do pet */
+.pet-detail h2.pet-name {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+/* Layout principal do conteúdo */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Foto do pet */
+.pet-photo img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+/* Informações do pet */
+.pet-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.pet-info p {
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+/* Lista de atividades favoritas */
+.pet-care {
+  flex: 1;
+  min-width: 280px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.pet-care h3 {
+  color: #f44336;
+  margin-bottom: 10px;
+}
+
+.pet-care ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.pet-care li {
+  margin-bottom: 8px;
+}
+
+/* Contato do tutor */
+.tutor-contact {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.tutor-contact h3 {
+  margin-bottom: 15px;
+  color: #f44336;
+}
+
+/* Rodapé */
+.main-footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+.logo-text {
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: white;
+}

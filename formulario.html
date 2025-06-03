@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cadastro de Pet - SocialPet</title>
+    <link rel="stylesheet" href="formulario.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Pet</h1>
+        <form>
+            <h2>Dados do Tutor</h2>
+            <label for="nomeTutor">Nome</label>
+            <input type="text" id="nomeTutor" name="nomeTutor" required />
+
+            <label for="telefoneTutor">Telefone</label>
+            <input type="tel" id="telefoneTutor" name="telefoneTutor" required />
+
+            <label for="enderecoTutor">Endereço</label>
+            <input type="text" id="enderecoTutor" name="enderecoTutor" required />
+
+            <h2>Dados do Pet</h2>
+            <label for="nomePet">Nome</label>
+            <input type="text" id="nomePet" name="nomePet" required />
+
+            <div class="linha">
+                <div class="campo">
+                    <label for="especiePet">Espécie</label>
+                    <select id="especiePet" name="especiePet" required>
+                        <option value="">Selecione</option>
+                        <option value="Cachorro">Cachorro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Pássaro">Pássaro</option>
+                        <option value="Coelho">Coelho</option>
+                        <option value="Peixe">Peixe</option>
+                        <option value="Hamster">Hamster</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="idadePet">Idade</label>
+                    <input type="number" id="idadePet" name="idadePet" min="0" required />
+                </div>
+            </div>
+
+            <label for="racaPet">Raça</label>
+            <input type="text" id="racaPet" name="racaPet" />
+
+            <label for="restricaoPet">Restrição Alimentar</label>
+            <input type="text" id="restricaoPet" name="restricaoPet" />
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>

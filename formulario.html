@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cadastro de Pet - SocialPet</title>
     <link rel="stylesheet" href="formulario.css" />
 </head>
+
 <body>
     <div class="container">
         <h1>Cadastro de Pet</h1>
-        <form>
+        <form enctype="multipart/form-data">
             <h2>Dados do Tutor</h2>
+
             <label for="nomeTutor">Nome</label>
             <input type="text" id="nomeTutor" name="nomeTutor" required />
 
@@ -21,6 +24,8 @@
             <input type="text" id="enderecoTutor" name="enderecoTutor" required />
 
             <h2>Dados do Pet</h2>
+            <label for="fotoPet">Foto do Pet</label>
+            <input type="file" id="fotoPet" name="fotoPet" accept="image/*" />
             <label for="nomePet">Nome</label>
             <input type="text" id="nomePet" name="nomePet" required />
 
@@ -49,10 +54,17 @@
             <input type="text" id="racaPet" name="racaPet" />
 
             <label for="restricaoPet">Restrição Alimentar</label>
-            <input type="text" id="restricaoPet" name="restricaoPet" />
+            <!-- <input type="text" id="restricaoPet" name="restricaoPet" /> -->
+            <textarea name="observacoesPet" id="observacoesPet" placeholder="Observações sobre o pet" rows="4"
+                cols="50">
+            </textarea>
 
-            <button type="submit">Cadastrar</button>
+            <div class="botoes">
+                <button type="submit">Cadastrar</button>
+                <a href="index.html" class="btn-cancelar">Cancelar</a>
+            </div>
         </form>
     </div>
 </body>
+
 </html>

@@ -38,7 +38,6 @@ input, select {
 }
 
 button {
-    margin-top: 25px;
     background-color: #28a745;
     color: white;
     padding: 12px;
@@ -60,5 +59,35 @@ button:hover {
 }
 
 .linha .campo {
+    flex: 1;
+}
+
+/* NOVO: Área dos botões lado a lado */
+.botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+/* Botão de cancelar */
+.btn-cancelar {
+    display: inline-block;
+    background-color: #dc3545;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    flex: 1;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cancelar:hover {
+    background-color: #c82333;
+}
+
+/* Ajuste para botão submit no grupo */
+.botoes button {
     flex: 1;
 }
